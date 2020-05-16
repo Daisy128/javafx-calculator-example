@@ -60,7 +60,7 @@ public class CalculatorController {
            }
            double number2 = Double.parseDouble(display.getText());
            double result = calculator.calculate(number1, number2, operator);
-           display.setText(String.format("%.5f", result));
+           display.setText(String.valueOf(result));
            operator = "";
         }
         else {
